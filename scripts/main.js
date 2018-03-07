@@ -7,6 +7,8 @@ xhttp.onreadystatechange = function() {
         parser = new DOMParser();
         xmlDoc = parser.parseFromString(this.responseText, "text/xml");
         
+        myHeading.textContent = "readyState";
+        
         document.getElementById("rawData").innerHTML = xmlDoc.getElementsByTagName("id")[0].childNodes[0].nodeValue;
     }
 };
