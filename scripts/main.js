@@ -1,5 +1,5 @@
 var myHeading = document.getElementById("headerID");
-myHeading.innerHTML = 'Hello world!';
+myHeading.innerHTML = 'Hello world! v2';
 
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
