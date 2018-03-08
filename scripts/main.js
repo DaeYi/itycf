@@ -1,5 +1,5 @@
 var myHeading = document.getElementById("headerID");
-myHeading.innerHTML = 'Hello world! v2';
+myHeading.innerHTML = 'Hello world! v3';
 
 /***** DELETE THIS BLOCK IF YQL WORKS
 var xhttp = new XMLHttpRequest();
@@ -18,6 +18,6 @@ xhttp.send();
 */
 
 var yqlCallback = function(data) {
-    myHeading.textContent = data.query.results.feed.title.content;
+    myHeading.innerHTML = data.query.results.feed.title.content;
   };
 
