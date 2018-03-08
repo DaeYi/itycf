@@ -18,6 +18,7 @@ xhttp.send();
 */
 
 var yqlCallback = function(data) {
-    document.getElementById("rawData").innerHTML = data.query.results.feed.title.content;
+    var rawData = document.getElementById("rawData")
+    rawData.innerHTML = data.query.results.feed.title.content;
   };
 
