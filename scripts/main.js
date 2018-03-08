@@ -4,7 +4,7 @@ myHeading.innerHTML = 'Hello world! v5';
 var yqlCallback = function(data) {
     var rawData = document.getElementById("rawData")
     
-    var entries = data.query.results.entry;
+    var entries = data.query.results.feed.entry;
     var num_entries = entries.length;
     
     var output = '';
