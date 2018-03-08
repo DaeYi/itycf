@@ -13,7 +13,7 @@ var yqlCallback = function(data) {
         var id = entries[i].id;
         output += id + ' - ';
         
-        var entry_children = entries[i].content.properties.children;
+        var entry_children = entries[i].content.properties;
         
         for (var j = 0; j < entry_children.length; j++)
         {
