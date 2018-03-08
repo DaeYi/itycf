@@ -8,11 +8,17 @@ var yqlCallback = function(data) {
     var num_entries = entries.length;
     
     var output = '';
-    for (var i = 0; i < num_entries; i++){
+    for (var i = 0; i < num_entries; i++)
+    {
         var id = entries[i].id;
-        var content = entries[i].content;
+        output += id + ' - ';
         
-        output += id + ' - ' + content + '<br/>';
+        var entry_children = entries[i].content.properties.children;
+        
+        for (var j = 0; j < entry_children.length; j++)
+        {
+            output += entry_children[j] + ' > ' + entry_children[j].content + '<br />';
+        }            
     }
     
     rawData.innerHTML = output;
