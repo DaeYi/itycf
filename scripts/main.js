@@ -18,6 +18,6 @@ xhttp.send();
 */
 
 var yqlCallback = function(data) {
-    myHeading.innerHTML = data.query.results.feed.title.content;
+    document.getElementById("rawData").innerHTML = data.query.results.feed.title.content;
   };
 
