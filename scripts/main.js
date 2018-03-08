@@ -18,7 +18,6 @@ xhttp.send();
 */
 
 var yqlCallback = function(data) {
-    var wind = data.query.results.channel.wind;
-    alert(wind.chill);
+    myHeading.textContent = data.query.results.feed.title.content;
   };
 
