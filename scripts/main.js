@@ -14,8 +14,9 @@ var yqlCallback = function(data) {
         output += id + ' - ';
         
         var entry_children = entries[i].content.properties;
+        var num_children = entry_children.length;
         
-        for (var j = 0; j < entry_children.length; j++)
+        for (var j = 0; j < num_children; j++)
         {
             output += entry_children[j] + ' > ' + entry_children[j].content + '<br />';
         }            
