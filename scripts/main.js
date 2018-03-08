@@ -15,6 +15,6 @@ var yqlCallback = function(data) {
         output += id + ' - ' + content + '<br/>';
     }
     
-    rawData.innerHTML = data.query.results.feed.title.content;
+    rawData.innerHTML = output;
   };
 
