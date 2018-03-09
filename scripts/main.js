@@ -71,7 +71,8 @@ var yqlCallback = function(data)
       // Sanity check
       if (entry_children.hasOwnProperty(key))
       {
-        interestLabels.push(key);
+        var timeString = key.substring(3)
+        interestLabels.push(timeString);
 
         var child = entry_children[key];
         dataSet.push(child.content);
