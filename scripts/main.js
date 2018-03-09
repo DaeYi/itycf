@@ -150,7 +150,7 @@ var yqlCallback = function(data)
   
   
   // Now modify header to answer question of flat yield curve
-  var myHeading = document.getElementById("headerID");
+  var myHeading = document.getElementById("responseHeader");
   if (tenYear <= twoYear)
   {
     myHeading.innerHTML = 'YES';
