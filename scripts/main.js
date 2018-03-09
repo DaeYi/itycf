@@ -66,7 +66,7 @@ var yqlCallback = function(data)
   for (var key in entry_children)
   {
     // Only bother if it has a timeframe
-    if (key.includes("BC_"))
+    if (key.includes("BC_") && !key.includes("DISPLAY"))
     {
       // Sanity check
       if (entry_children.hasOwnProperty(key))
